@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using System.Windows.Forms;
+
+namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -30,6 +32,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Абоба = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -47,6 +56,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.Абоба.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.БАЗА.SuspendLayout();
@@ -56,6 +66,13 @@
             // 
             // Абоба
             // 
+            this.Абоба.Controls.Add(this.button10);
+            this.Абоба.Controls.Add(this.button9);
+            this.Абоба.Controls.Add(this.dataGridView4);
+            this.Абоба.Controls.Add(this.button8);
+            this.Абоба.Controls.Add(this.textBox10);
+            this.Абоба.Controls.Add(this.textBox9);
+            this.Абоба.Controls.Add(this.textBox8);
             this.Абоба.Controls.Add(this.dataGridView3);
             this.Абоба.Controls.Add(this.button5);
             this.Абоба.Controls.Add(this.button3);
@@ -72,6 +89,71 @@
             this.Абоба.Text = "Патреон";
             this.Абоба.UseVisualStyleBackColor = true;
             this.Абоба.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(356, 6);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(125, 23);
+            this.button10.TabIndex = 14;
+            this.button10.Text = "Удалить ";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(870, 376);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(184, 23);
+            this.button9.TabIndex = 13;
+            this.button9.Text = "Показать дауна";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(719, 247);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowTemplate.Height = 25;
+            this.dataGridView4.Size = new System.Drawing.Size(335, 94);
+            this.dataGridView4.TabIndex = 12;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(719, 376);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(145, 23);
+            this.button8.TabIndex = 11;
+            this.button8.Text = "Добавить долбаеба";
+            this.button8.UseCompatibleTextRendering = true;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox10.Location = new System.Drawing.Point(954, 347);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 23);
+            this.textBox10.TabIndex = 10;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox9.Location = new System.Drawing.Point(719, 347);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 23);
+            this.textBox9.TabIndex = 9;
+            // 
+            // textBox8
+            // 
+            this.textBox8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox8.Location = new System.Drawing.Point(832, 347);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 23);
+            this.textBox8.TabIndex = 8;
             // 
             // dataGridView3
             // 
@@ -97,7 +179,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(226, 8);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(255, 23);
+            this.button3.Size = new System.Drawing.Size(124, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "Поиск";
             this.button3.UseVisualStyleBackColor = true;
@@ -246,6 +328,7 @@
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.Абоба.ResumeLayout(false);
             this.Абоба.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.БАЗА.ResumeLayout(false);
@@ -275,5 +358,15 @@
         private Button button4;
         private TextBox textBox2;
         private Button button7;
+        private TextBox textBox7;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox10;
+        private TextBox textBox9;
+        private TextBox textBox8;
+        private Button button8;
+        private DataGridView dataGridView4;
+        private Button button9;
+        private Button button10;
     }
 }
